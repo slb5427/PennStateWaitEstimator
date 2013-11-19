@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C23F1380183BDCFA0076F13C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F137F183BDCFA0076F13C /* Foundation.framework */; };
+		C23F1382183BDCFA0076F13C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F1381183BDCFA0076F13C /* CoreGraphics.framework */; };
+		C23F1384183BDCFA0076F13C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F1383183BDCFA0076F13C /* UIKit.framework */; };
+		C23F138A183BDCFA0076F13C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C23F1388183BDCFA0076F13C /* InfoPlist.strings */; };
+		C23F138C183BDCFA0076F13C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F138B183BDCFA0076F13C /* main.m */; };
+		C23F1390183BDCFB0076F13C /* SLBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F138F183BDCFB0076F13C /* SLBAppDelegate.m */; };
+		C23F1393183BDCFB0076F13C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23F1391183BDCFB0076F13C /* Main.storyboard */; };
+		C23F1396183BDCFB0076F13C /* SLBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F1395183BDCFB0076F13C /* SLBViewController.m */; };
+		C23F1398183BDCFB0076F13C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23F1397183BDCFB0076F13C /* Images.xcassets */; };
+		C23F139F183BDCFB0076F13C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F139E183BDCFB0076F13C /* XCTest.framework */; };
+		C23F13A0183BDCFB0076F13C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F137F183BDCFA0076F13C /* Foundation.framework */; };
+		C23F13A1183BDCFB0076F13C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F1383183BDCFA0076F13C /* UIKit.framework */; };
+		C23F13A9183BDCFB0076F13C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C23F13A7183BDCFB0076F13C /* InfoPlist.strings */; };
+		C23F13AB183BDCFB0076F13C /* PennStateWaitEstimatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F13AA183BDCFB0076F13C /* PennStateWaitEstimatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C23F13A2183BDCFB0076F13C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C23F1374183BDCFA0076F13C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C23F137B183BDCFA0076F13C;
+			remoteInfo = PennStateWaitEstimator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C23F137C183BDCFA0076F13C /* PennStateWaitEstimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennStateWaitEstimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23F137F183BDCFA0076F13C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C23F1381183BDCFA0076F13C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C23F1383183BDCFA0076F13C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C23F1387183BDCFA0076F13C /* PennStateWaitEstimator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PennStateWaitEstimator-Info.plist"; sourceTree = "<group>"; };
+		C23F1389183BDCFA0076F13C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C23F138B183BDCFA0076F13C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C23F138D183BDCFA0076F13C /* PennStateWaitEstimator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PennStateWaitEstimator-Prefix.pch"; sourceTree = "<group>"; };
+		C23F138E183BDCFA0076F13C /* SLBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLBAppDelegate.h; sourceTree = "<group>"; };
+		C23F138F183BDCFB0076F13C /* SLBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLBAppDelegate.m; sourceTree = "<group>"; };
+		C23F1392183BDCFB0076F13C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C23F1394183BDCFB0076F13C /* SLBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLBViewController.h; sourceTree = "<group>"; };
+		C23F1395183BDCFB0076F13C /* SLBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLBViewController.m; sourceTree = "<group>"; };
+		C23F1397183BDCFB0076F13C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C23F139D183BDCFB0076F13C /* PennStateWaitEstimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PennStateWaitEstimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23F139E183BDCFB0076F13C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C23F13A6183BDCFB0076F13C /* PennStateWaitEstimatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PennStateWaitEstimatorTests-Info.plist"; sourceTree = "<group>"; };
+		C23F13A8183BDCFB0076F13C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C23F13AA183BDCFB0076F13C /* PennStateWaitEstimatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PennStateWaitEstimatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C23F1379183BDCFA0076F13C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23F1382183BDCFA0076F13C /* CoreGraphics.framework in Frameworks */,
+				C23F1384183BDCFA0076F13C /* UIKit.framework in Frameworks */,
+				C23F1380183BDCFA0076F13C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23F139A183BDCFB0076F13C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23F139F183BDCFB0076F13C /* XCTest.framework in Frameworks */,
+				C23F13A1183BDCFB0076F13C /* UIKit.framework in Frameworks */,
+				C23F13A0183BDCFB0076F13C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C23F1373183BDCFA0076F13C = {
+			isa = PBXGroup;
+			children = (
+				C23F1385183BDCFA0076F13C /* PennStateWaitEstimator */,
+				C23F13A4183BDCFB0076F13C /* PennStateWaitEstimatorTests */,
+				C23F137E183BDCFA0076F13C /* Frameworks */,
+				C23F137D183BDCFA0076F13C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C23F137D183BDCFA0076F13C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C23F137C183BDCFA0076F13C /* PennStateWaitEstimator.app */,
+				C23F139D183BDCFB0076F13C /* PennStateWaitEstimatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23F137E183BDCFA0076F13C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C23F137F183BDCFA0076F13C /* Foundation.framework */,
+				C23F1381183BDCFA0076F13C /* CoreGraphics.framework */,
+				C23F1383183BDCFA0076F13C /* UIKit.framework */,
+				C23F139E183BDCFB0076F13C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C23F1385183BDCFA0076F13C /* PennStateWaitEstimator */ = {
+			isa = PBXGroup;
+			children = (
+				C23F138E183BDCFA0076F13C /* SLBAppDelegate.h */,
+				C23F138F183BDCFB0076F13C /* SLBAppDelegate.m */,
+				C23F1391183BDCFB0076F13C /* Main.storyboard */,
+				C23F1394183BDCFB0076F13C /* SLBViewController.h */,
+				C23F1395183BDCFB0076F13C /* SLBViewController.m */,
+				C23F1397183BDCFB0076F13C /* Images.xcassets */,
+				C23F1386183BDCFA0076F13C /* Supporting Files */,
+			);
+			path = PennStateWaitEstimator;
+			sourceTree = "<group>";
+		};
+		C23F1386183BDCFA0076F13C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C23F1387183BDCFA0076F13C /* PennStateWaitEstimator-Info.plist */,
+				C23F1388183BDCFA0076F13C /* InfoPlist.strings */,
+				C23F138B183BDCFA0076F13C /* main.m */,
+				C23F138D183BDCFA0076F13C /* PennStateWaitEstimator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C23F13A4183BDCFB0076F13C /* PennStateWaitEstimatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				C23F13AA183BDCFB0076F13C /* PennStateWaitEstimatorTests.m */,
+				C23F13A5183BDCFB0076F13C /* Supporting Files */,
+			);
+			path = PennStateWaitEstimatorTests;
+			sourceTree = "<group>";
+		};
+		C23F13A5183BDCFB0076F13C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C23F13A6183BDCFB0076F13C /* PennStateWaitEstimatorTests-Info.plist */,
+				C23F13A7183BDCFB0076F13C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C23F137B183BDCFA0076F13C /* PennStateWaitEstimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23F13AE183BDCFB0076F13C /* Build configuration list for PBXNativeTarget "PennStateWaitEstimator" */;
+			buildPhases = (
+				C23F1378183BDCFA0076F13C /* Sources */,
+				C23F1379183BDCFA0076F13C /* Frameworks */,
+				C23F137A183BDCFA0076F13C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PennStateWaitEstimator;
+			productName = PennStateWaitEstimator;
+			productReference = C23F137C183BDCFA0076F13C /* PennStateWaitEstimator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C23F139C183BDCFB0076F13C /* PennStateWaitEstimatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C23F13B1183BDCFB0076F13C /* Build configuration list for PBXNativeTarget "PennStateWaitEstimatorTests" */;
+			buildPhases = (
+				C23F1399183BDCFB0076F13C /* Sources */,
+				C23F139A183BDCFB0076F13C /* Frameworks */,
+				C23F139B183BDCFB0076F13C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C23F13A3183BDCFB0076F13C /* PBXTargetDependency */,
+			);
+			name = PennStateWaitEstimatorTests;
+			productName = PennStateWaitEstimatorTests;
+			productReference = C23F139D183BDCFB0076F13C /* PennStateWaitEstimatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C23F1374183BDCFA0076F13C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SLB;
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					C23F139C183BDCFB0076F13C = {
+						TestTargetID = C23F137B183BDCFA0076F13C;
+					};
+				};
+			};
+			buildConfigurationList = C23F1377183BDCFA0076F13C /* Build configuration list for PBXProject "PennStateWaitEstimator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C23F1373183BDCFA0076F13C;
+			productRefGroup = C23F137D183BDCFA0076F13C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C23F137B183BDCFA0076F13C /* PennStateWaitEstimator */,
+				C23F139C183BDCFB0076F13C /* PennStateWaitEstimatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C23F137A183BDCFA0076F13C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23F1398183BDCFB0076F13C /* Images.xcassets in Resources */,
+				C23F138A183BDCFA0076F13C /* InfoPlist.strings in Resources */,
+				C23F1393183BDCFB0076F13C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23F139B183BDCFB0076F13C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23F13A9183BDCFB0076F13C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C23F1378183BDCFA0076F13C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23F1390183BDCFB0076F13C /* SLBAppDelegate.m in Sources */,
+				C23F1396183BDCFB0076F13C /* SLBViewController.m in Sources */,
+				C23F138C183BDCFA0076F13C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23F1399183BDCFB0076F13C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23F13AB183BDCFB0076F13C /* PennStateWaitEstimatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C23F13A3183BDCFB0076F13C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C23F137B183BDCFA0076F13C /* PennStateWaitEstimator */;
+			targetProxy = C23F13A2183BDCFB0076F13C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C23F1388183BDCFA0076F13C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23F1389183BDCFA0076F13C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C23F1391183BDCFB0076F13C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23F1392183BDCFB0076F13C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C23F13A7183BDCFB0076F13C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C23F13A8183BDCFB0076F13C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C23F13AC183BDCFB0076F13C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C23F13AD183BDCFB0076F13C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C23F13AF183BDCFB0076F13C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PennStateWaitEstimator/PennStateWaitEstimator-Prefix.pch";
+				INFOPLIST_FILE = "PennStateWaitEstimator/PennStateWaitEstimator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C23F13B0183BDCFB0076F13C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PennStateWaitEstimator/PennStateWaitEstimator-Prefix.pch";
+				INFOPLIST_FILE = "PennStateWaitEstimator/PennStateWaitEstimator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C23F13B2183BDCFB0076F13C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PennStateWaitEstimator.app/PennStateWaitEstimator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PennStateWaitEstimator/PennStateWaitEstimator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PennStateWaitEstimatorTests/PennStateWaitEstimatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C23F13B3183BDCFB0076F13C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PennStateWaitEstimator.app/PennStateWaitEstimator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PennStateWaitEstimator/PennStateWaitEstimator-Prefix.pch";
+				INFOPLIST_FILE = "PennStateWaitEstimatorTests/PennStateWaitEstimatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C23F1377183BDCFA0076F13C /* Build configuration list for PBXProject "PennStateWaitEstimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23F13AC183BDCFB0076F13C /* Debug */,
+				C23F13AD183BDCFB0076F13C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C23F13AE183BDCFB0076F13C /* Build configuration list for PBXNativeTarget "PennStateWaitEstimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23F13AF183BDCFB0076F13C /* Debug */,
+				C23F13B0183BDCFB0076F13C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C23F13B1183BDCFB0076F13C /* Build configuration list for PBXNativeTarget "PennStateWaitEstimatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C23F13B2183BDCFB0076F13C /* Debug */,
+				C23F13B3183BDCFB0076F13C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C23F1374183BDCFA0076F13C /* Project object */;
+}

@@ -226,6 +226,19 @@
 		C23F154D183C01A50076F13C /* 99-umbrella.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F1482183C01A50076F13C /* 99-umbrella.png */; };
 		C23F154F184E51CE0076F13C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F154E184E51CE0076F13C /* MapKit.framework */; };
 		C23F1551184E51D90076F13C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F1550184E51D90076F13C /* CoreLocation.framework */; };
+		C23F155718500EDC0076F13C /* SLBMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F155618500EDC0076F13C /* SLBMapViewController.m */; };
+		C23F155918501D060076F13C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F155818501D060076F13C /* Parse.framework */; };
+		C23F155B18501D510076F13C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F155A18501D510076F13C /* AudioToolbox.framework */; };
+		C23F155D18501D610076F13C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F155C18501D610076F13C /* CFNetwork.framework */; };
+		C23F155F18501D7C0076F13C /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F155E18501D7C0076F13C /* libz.1.1.3.dylib */; };
+		C23F156118501D870076F13C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F156018501D870076F13C /* MobileCoreServices.framework */; };
+		C23F156318501D900076F13C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F156218501D900076F13C /* QuartzCore.framework */; };
+		C23F156518501D9C0076F13C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F156418501D9C0076F13C /* Security.framework */; };
+		C23F156718501DA80076F13C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F156618501DA80076F13C /* StoreKit.framework */; };
+		C23F156918501DB60076F13C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F156818501DB60076F13C /* SystemConfiguration.framework */; };
+		C23F156C1853FCAF0076F13C /* SLBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F156B1853FCAF0076F13C /* SLBTableViewController.m */; };
+		C23F1575185959580076F13C /* SLBUserInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F1574185959580076F13C /* SLBUserInputViewController.m */; };
+		C23F1578185973750076F13C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F1577185973750076F13C /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -463,6 +476,23 @@
 		C23F1482183C01A50076F13C /* 99-umbrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "99-umbrella.png"; sourceTree = "<group>"; };
 		C23F154E184E51CE0076F13C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C23F1550184E51D90076F13C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C23F155518500EDC0076F13C /* SLBMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBMapViewController.h; sourceTree = "<group>"; };
+		C23F155618500EDC0076F13C /* SLBMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLBMapViewController.m; sourceTree = "<group>"; };
+		C23F155818501D060076F13C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		C23F155A18501D510076F13C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C23F155C18501D610076F13C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C23F155E18501D7C0076F13C /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		C23F156018501D870076F13C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C23F156218501D900076F13C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C23F156418501D9C0076F13C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C23F156618501DA80076F13C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C23F156818501DB60076F13C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C23F156A1853FCAF0076F13C /* SLBTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBTableViewController.h; sourceTree = "<group>"; };
+		C23F156B1853FCAF0076F13C /* SLBTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLBTableViewController.m; sourceTree = "<group>"; };
+		C23F1573185959580076F13C /* SLBUserInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBUserInputViewController.h; sourceTree = "<group>"; };
+		C23F1574185959580076F13C /* SLBUserInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLBUserInputViewController.m; sourceTree = "<group>"; };
+		C23F1576185973750076F13C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C23F1577185973750076F13C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,10 +500,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23F156918501DB60076F13C /* SystemConfiguration.framework in Frameworks */,
+				C23F156718501DA80076F13C /* StoreKit.framework in Frameworks */,
+				C23F156518501D9C0076F13C /* Security.framework in Frameworks */,
+				C23F156318501D900076F13C /* QuartzCore.framework in Frameworks */,
+				C23F156118501D870076F13C /* MobileCoreServices.framework in Frameworks */,
+				C23F155F18501D7C0076F13C /* libz.1.1.3.dylib in Frameworks */,
+				C23F1382183BDCFA0076F13C /* CoreGraphics.framework in Frameworks */,
+				C23F155D18501D610076F13C /* CFNetwork.framework in Frameworks */,
+				C23F155B18501D510076F13C /* AudioToolbox.framework in Frameworks */,
 				C23F1551184E51D90076F13C /* CoreLocation.framework in Frameworks */,
 				C23F154F184E51CE0076F13C /* MapKit.framework in Frameworks */,
-				C23F1382183BDCFA0076F13C /* CoreGraphics.framework in Frameworks */,
 				C23F1384183BDCFA0076F13C /* UIKit.framework in Frameworks */,
+				C23F155918501D060076F13C /* Parse.framework in Frameworks */,
 				C23F1380183BDCFA0076F13C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +552,15 @@
 		C23F137E183BDCFA0076F13C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C23F156818501DB60076F13C /* SystemConfiguration.framework */,
+				C23F156618501DA80076F13C /* StoreKit.framework */,
+				C23F156418501D9C0076F13C /* Security.framework */,
+				C23F156218501D900076F13C /* QuartzCore.framework */,
+				C23F156018501D870076F13C /* MobileCoreServices.framework */,
+				C23F155E18501D7C0076F13C /* libz.1.1.3.dylib */,
+				C23F155C18501D610076F13C /* CFNetwork.framework */,
+				C23F155A18501D510076F13C /* AudioToolbox.framework */,
+				C23F155818501D060076F13C /* Parse.framework */,
 				C23F1550184E51D90076F13C /* CoreLocation.framework */,
 				C23F154E184E51CE0076F13C /* MapKit.framework */,
 				C23F137F183BDCFA0076F13C /* Foundation.framework */,
@@ -528,9 +576,9 @@
 			children = (
 				C23F138E183BDCFA0076F13C /* SLBAppDelegate.h */,
 				C23F138F183BDCFB0076F13C /* SLBAppDelegate.m */,
-				C23F1391183BDCFB0076F13C /* Main.storyboard */,
-				C23F1394183BDCFB0076F13C /* SLBViewController.h */,
-				C23F1395183BDCFB0076F13C /* SLBViewController.m */,
+				C23F155218500D370076F13C /* Models */,
+				C23F155318500D420076F13C /* Views */,
+				C23F155418500D4E0076F13C /* Controllers */,
 				C23F1397183BDCFB0076F13C /* Images.xcassets */,
 				C23F1386183BDCFA0076F13C /* Supporting Files */,
 			);
@@ -783,6 +831,38 @@
 				C23F1482183C01A50076F13C /* 99-umbrella.png */,
 			);
 			path = "PNG icons";
+			sourceTree = "<group>";
+		};
+		C23F155218500D370076F13C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C23F1576185973750076F13C /* Constants.h */,
+				C23F1577185973750076F13C /* Constants.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C23F155318500D420076F13C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C23F1391183BDCFB0076F13C /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C23F155418500D4E0076F13C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C23F1394183BDCFB0076F13C /* SLBViewController.h */,
+				C23F1395183BDCFB0076F13C /* SLBViewController.m */,
+				C23F155518500EDC0076F13C /* SLBMapViewController.h */,
+				C23F155618500EDC0076F13C /* SLBMapViewController.m */,
+				C23F156A1853FCAF0076F13C /* SLBTableViewController.h */,
+				C23F156B1853FCAF0076F13C /* SLBTableViewController.m */,
+				C23F1573185959580076F13C /* SLBUserInputViewController.h */,
+				C23F1574185959580076F13C /* SLBUserInputViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1085,9 +1165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23F1575185959580076F13C /* SLBUserInputViewController.m in Sources */,
 				C23F1390183BDCFB0076F13C /* SLBAppDelegate.m in Sources */,
 				C23F1396183BDCFB0076F13C /* SLBViewController.m in Sources */,
 				C23F138C183BDCFA0076F13C /* main.m in Sources */,
+				C23F155718500EDC0076F13C /* SLBMapViewController.m in Sources */,
+				C23F1578185973750076F13C /* Constants.m in Sources */,
+				C23F156C1853FCAF0076F13C /* SLBTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1214,6 +1298,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/483w/Desktop/PennStateWaitEstimator,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PennStateWaitEstimator/PennStateWaitEstimator-Prefix.pch";
 				INFOPLIST_FILE = "PennStateWaitEstimator/PennStateWaitEstimator-Info.plist";
@@ -1227,6 +1315,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/483w/Desktop/PennStateWaitEstimator,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PennStateWaitEstimator/PennStateWaitEstimator-Prefix.pch";
 				INFOPLIST_FILE = "PennStateWaitEstimator/PennStateWaitEstimator-Info.plist";

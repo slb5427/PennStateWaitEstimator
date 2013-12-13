@@ -43,6 +43,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    //queries the DB for the initial data
     [self loadObjects];
     
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
@@ -118,6 +120,8 @@
 - (PFQuery *)queryForTable {
     //create predicate based on user preferences
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    
+    //create the predicate based on the filters that the user chose
     NSString *filterString = @"";
     if ([[preferences objectForKey:kFilterRestaurants] boolValue]) {
         filterString = @"(isRestaurant = true)";
@@ -138,6 +142,7 @@
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:filterString];
     
+    //query the DB using the predicate you just created
     PFQuery *query = [PFQuery queryWithClassName:self.parseClassName predicate:predicate];
     
     if ([[preferences objectForKey:kOrderByName] boolValue]) {
@@ -155,6 +160,8 @@
 // a UITableViewCellStyleDefault style cell with the label being the first key in the object.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
     static NSString *CellIdentifier = @"Cell";
+    
+    //assign color based on wait time
     if ([object[kWaitTime] integerValue] > kLongWait) {
         CellIdentifier = @"RedCell";
     } else if ([object[kWaitTime] integerValue] > kMediumWait) {
@@ -246,8 +253,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [super tableView:tableView didSelectRowAtIndexPath:indexPath];
-    
-    //segue to user input page
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

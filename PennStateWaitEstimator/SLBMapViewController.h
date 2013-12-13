@@ -14,6 +14,4 @@
 
 @interface SLBMapViewController : UIViewController <MKMapViewDelegate>
 
-
-
 @end

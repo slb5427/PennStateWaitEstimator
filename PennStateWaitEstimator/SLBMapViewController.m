@@ -37,11 +37,12 @@
     PFQuery *query = [PFQuery queryWithClassName:kClassName];
     
     self.establishmentsArray = [query findObjects];
-    NSLog(@"length of query: %d*********************************************************************************",[self.establishmentsArray count]);
     [self.mapView removeAnnotations:[self.mapView annotations]];
     
+    // create an annotation for each object that was returned
     for (PFObject *object in self.establishmentsArray) {
         MKPointAnnotation *buildingAnnotation = [[MKPointAnnotation alloc] init];
+        
         PFGeoPoint *geoPoint = object[kLocation];
         
         CLLocationCoordinate2D buildingCenter = CLLocationCoordinate2DMake(geoPoint.latitude, geoPoint.longitude);
@@ -49,6 +50,7 @@
         
         [buildingAnnotation setTitle:object[kNameOfEstablishment]];
         
+        //calculating the wait time by averaging all of the submitted wait times from users from the past hour
         NSDate *currentDate = [NSDate date];
         NSDate *currentDateAnHourEarlier = [currentDate dateByAddingTimeInterval:-kNumberOfSecondsInMinute*kNumberOfMinutesInHour];
         
@@ -88,6 +90,7 @@
     [super viewDidLoad];
     self.mapView.delegate = self;
 	// Do any additional setup after loading the view.
+    
     // ---- Region ----
     CLLocationCoordinate2D mapCenter = CLLocationCoordinate2DMake(kLatitudeForStateCollege,kLongitudeForStateCollege);
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(mapCenter, kRegionForMap, kRegionForMap);
@@ -106,6 +109,7 @@
 - (MKAnnotationView *) mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
     MKAnnotationView *myAnnotation = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"AnnotationIdentifier"];
     
+    //depending on how long the wait time is assign appropriate images/colors to the annotations
     NSString *imageUsed = @"";
     NSLog(@"second length: %d",[self.establishmentsArray count]);
     for (PFObject *object in self.establishmentsArray) {

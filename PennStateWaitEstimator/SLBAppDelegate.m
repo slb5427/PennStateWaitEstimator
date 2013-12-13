@@ -13,29 +13,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // This allows me to connect to the Parse Server and make API requests
     [Parse setApplicationId:@"NBoxgIiZAD7qPtp61PfW7xtHHITt24inUUeGXJcS" clientKey:@"rvgYGoo3m2YD20Eujy6da9bUESAm8MBPDvwGcSxk"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
-    
-    //SLBTableViewController *controller = [[SLBTableViewController alloc] init];
-    
-    //self.window.rootViewController = controller;
-    /*
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:controller];
-    [self.window makeKeyAndVisible];
-    */
-    // Let's make an object each launch, so there's definitely something to display.
-    /*
-    PFObject *object = [PFObject objectWithClassName:@"Establishment"];
-    [object setObject:@"Sample name" forKey:@"name"];
-    //[object setObject:@1 forKey:@"priority"];
-    [object saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        // Refresh the table when the object is done saving.
-        [controller loadObjects];
-    }];
-    */
     
     return YES;
 }

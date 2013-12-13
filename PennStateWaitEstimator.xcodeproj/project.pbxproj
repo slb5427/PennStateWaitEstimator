@@ -243,6 +243,12 @@
 		C23F158F185A7DD80076F13C /* RedDot.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F158C185A7DD80076F13C /* RedDot.png */; };
 		C23F1590185A7DD80076F13C /* YellowDot.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F158D185A7DD80076F13C /* YellowDot.png */; };
 		C23F1592185A89B20076F13C /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F1591185A89B20076F13C /* arrow.png */; };
+		C23F1594185A9E080076F13C /* penn-state-logo-2005.gif in Resources */ = {isa = PBXBuildFile; fileRef = C23F1593185A9E080076F13C /* penn-state-logo-2005.gif */; };
+		C23F1598185AA0350076F13C /* Apps-clock-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F1597185AA0350076F13C /* Apps-clock-icon.png */; };
+		C23F159A185AA06D0076F13C /* Apps-clock-icon80px.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F1599185AA06D0076F13C /* Apps-clock-icon80px.png */; };
+		C23F159C185AA0A20076F13C /* Apps-clock-icon58px.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F159B185AA0A20076F13C /* Apps-clock-icon58px.png */; };
+		C23F159F185AA11A0076F13C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F159D185AA11A0076F13C /* Default.png */; };
+		C23F15A0185AA11A0076F13C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F159E185AA11A0076F13C /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -501,6 +507,12 @@
 		C23F158C185A7DD80076F13C /* RedDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedDot.png; sourceTree = "<group>"; };
 		C23F158D185A7DD80076F13C /* YellowDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YellowDot.png; sourceTree = "<group>"; };
 		C23F1591185A89B20076F13C /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		C23F1593185A9E080076F13C /* penn-state-logo-2005.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "penn-state-logo-2005.gif"; sourceTree = "<group>"; };
+		C23F1597185AA0350076F13C /* Apps-clock-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apps-clock-icon.png"; sourceTree = "<group>"; };
+		C23F1599185AA06D0076F13C /* Apps-clock-icon80px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apps-clock-icon80px.png"; sourceTree = "<group>"; };
+		C23F159B185AA0A20076F13C /* Apps-clock-icon58px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apps-clock-icon58px.png"; sourceTree = "<group>"; };
+		C23F159D185AA11A0076F13C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C23F159E185AA11A0076F13C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -596,6 +608,12 @@
 		C23F1386183BDCFA0076F13C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C23F159D185AA11A0076F13C /* Default.png */,
+				C23F159E185AA11A0076F13C /* Default@2x.png */,
+				C23F159B185AA0A20076F13C /* Apps-clock-icon58px.png */,
+				C23F1599185AA06D0076F13C /* Apps-clock-icon80px.png */,
+				C23F1597185AA0350076F13C /* Apps-clock-icon.png */,
+				C23F1593185A9E080076F13C /* penn-state-logo-2005.gif */,
 				C23F1591185A89B20076F13C /* arrow.png */,
 				C23F158B185A7DD80076F13C /* GreenDot.png */,
 				C23F158C185A7DD80076F13C /* RedDot.png */,
@@ -981,6 +999,7 @@
 				C23F1540183C01A50076F13C /* 86-camera.png in Resources */,
 				C23F1398183BDCFB0076F13C /* Images.xcassets in Resources */,
 				C23F14CC183C01A50076F13C /* 155-bowtie.png in Resources */,
+				C23F1594185A9E080076F13C /* penn-state-logo-2005.gif in Resources */,
 				C23F1489183C01A50076F13C /* 04-squiggle.png in Resources */,
 				C23F151D183C01A50076F13C /* 51-outlet.png in Resources */,
 				C23F14C2183C01A50076F13C /* 146-gavel.png in Resources */,
@@ -1011,6 +1030,7 @@
 				C23F14FE183C01A50076F13C /* 200-card-clubs.png in Resources */,
 				C23F1485183C01A50076F13C /* glyphish-icons.psd in Resources */,
 				C23F150F183C01A50076F13C /* 37-suitcase.png in Resources */,
+				C23F159A185AA06D0076F13C /* Apps-clock-icon80px.png in Resources */,
 				C23F1549183C01A50076F13C /* 95-equalizer.png in Resources */,
 				C23F153C183C01A50076F13C /* 82-dog-paw.png in Resources */,
 				C23F1530183C01A50076F13C /* 70-tv.png in Resources */,
@@ -1026,6 +1046,7 @@
 				C23F1504183C01A50076F13C /* 26-bandaid.png in Resources */,
 				C23F14D2183C01A50076F13C /* 160-voicemail-2.png in Resources */,
 				C23F14EA183C01A50076F13C /* 182-messenger-bag.png in Resources */,
+				C23F15A0185AA11A0076F13C /* Default@2x.png in Resources */,
 				C23F14AE183C01A50076F13C /* 128-bone.png in Resources */,
 				C23F1541183C01A50076F13C /* 87-wine-glass.png in Resources */,
 				C23F14E9183C01A50076F13C /* 181-hammer.png in Resources */,
@@ -1041,6 +1062,7 @@
 				C23F14D4183C01A50076F13C /* 162-receipt.png in Resources */,
 				C23F1492183C01A50076F13C /* 102-walk.png in Resources */,
 				C23F14CD183C01A50076F13C /* 156-controlpad.png in Resources */,
+				C23F159F185AA11A0076F13C /* Default.png in Resources */,
 				C23F14EB183C01A50076F13C /* 183-genie-lamp.png in Resources */,
 				C23F14FB183C01A50076F13C /* 198-card-spades.png in Resources */,
 				C23F1491183C01A50076F13C /* 101-gameplan.png in Resources */,
@@ -1056,9 +1078,11 @@
 				C23F14CF183C01A50076F13C /* 158-wrench-2.png in Resources */,
 				C23F153A183C01A50076F13C /* 80-shopping-cart.png in Resources */,
 				C23F14DB183C01A50076F13C /* 169-8ball.png in Resources */,
+				C23F159C185AA0A20076F13C /* Apps-clock-icon58px.png in Resources */,
 				C23F1592185A89B20076F13C /* arrow.png in Resources */,
 				C23F149D183C01A50076F13C /* 112-group.png in Resources */,
 				C23F1498183C01A50076F13C /* 108-badge.png in Resources */,
+				C23F1598185AA0350076F13C /* Apps-clock-icon.png in Resources */,
 				C23F1538183C01A50076F13C /* 78-stopwatch.png in Resources */,
 				C23F14A0183C01A50076F13C /* 115-bow-and-arrow.png in Resources */,
 				C23F14E1183C01A50076F13C /* 174-imac.png in Resources */,
@@ -1312,8 +1336,6 @@
 		C23F13AF183BDCFB0076F13C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/483w/Desktop/PennStateWaitEstimator,
@@ -1329,8 +1351,6 @@
 		C23F13B0183BDCFB0076F13C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/483w/Desktop/PennStateWaitEstimator,

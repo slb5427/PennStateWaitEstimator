@@ -45,12 +45,6 @@
     self.restaurantsSwitch.on = [[preferences objectForKey:kFilterRestaurants] boolValue];
     self.barsSwitch.on = [[preferences objectForKey:kFilterBars] boolValue];
     self.otherSwitch.on = [[preferences objectForKey:kFilterOther] boolValue];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -152,20 +146,31 @@
     [preferences synchronize];
 }
 
+//At least one
+
 - (IBAction)filterRestaurants:(id)sender {
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    if (!self.barsSwitch.on && !self.otherSwitch.on) {
+        [self.restaurantsSwitch setOn:YES animated:YES];
+    }
     [preferences setBool:self.restaurantsSwitch.on forKey:kFilterRestaurants];
     [preferences synchronize];
 }
 
 - (IBAction)filterBars:(id)sender {
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    if (!self.restaurantsSwitch.on && !self.otherSwitch.on) {
+        [self.barsSwitch setOn:YES animated:YES];
+    }
     [preferences setBool:self.barsSwitch.on forKey:kFilterBars];
     [preferences synchronize];
 }
 
 - (IBAction)filterOther:(id)sender {
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    if (!self.barsSwitch.on && !self.restaurantsSwitch.on) {
+        [self.otherSwitch setOn:YES animated:YES];
+    }
     [preferences setBool:self.otherSwitch.on forKey:kFilterOther];
     [preferences synchronize];
 }

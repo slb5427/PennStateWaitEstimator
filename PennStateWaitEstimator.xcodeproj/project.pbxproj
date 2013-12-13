@@ -14,7 +14,6 @@
 		C23F138C183BDCFA0076F13C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F138B183BDCFA0076F13C /* main.m */; };
 		C23F1390183BDCFB0076F13C /* SLBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F138F183BDCFB0076F13C /* SLBAppDelegate.m */; };
 		C23F1393183BDCFB0076F13C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C23F1391183BDCFB0076F13C /* Main.storyboard */; };
-		C23F1396183BDCFB0076F13C /* SLBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F1395183BDCFB0076F13C /* SLBViewController.m */; };
 		C23F1398183BDCFB0076F13C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C23F1397183BDCFB0076F13C /* Images.xcassets */; };
 		C23F139F183BDCFB0076F13C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F139E183BDCFB0076F13C /* XCTest.framework */; };
 		C23F13A0183BDCFB0076F13C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23F137F183BDCFA0076F13C /* Foundation.framework */; };
@@ -239,6 +238,11 @@
 		C23F156C1853FCAF0076F13C /* SLBTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F156B1853FCAF0076F13C /* SLBTableViewController.m */; };
 		C23F1575185959580076F13C /* SLBUserInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F1574185959580076F13C /* SLBUserInputViewController.m */; };
 		C23F1578185973750076F13C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F1577185973750076F13C /* Constants.m */; };
+		C23F157E185A5BB60076F13C /* SLBPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23F157D185A5BB60076F13C /* SLBPreferencesViewController.m */; };
+		C23F158E185A7DD80076F13C /* GreenDot.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F158B185A7DD80076F13C /* GreenDot.png */; };
+		C23F158F185A7DD80076F13C /* RedDot.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F158C185A7DD80076F13C /* RedDot.png */; };
+		C23F1590185A7DD80076F13C /* YellowDot.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F158D185A7DD80076F13C /* YellowDot.png */; };
+		C23F1592185A89B20076F13C /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C23F1591185A89B20076F13C /* arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,8 +267,6 @@
 		C23F138E183BDCFA0076F13C /* SLBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLBAppDelegate.h; sourceTree = "<group>"; };
 		C23F138F183BDCFB0076F13C /* SLBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLBAppDelegate.m; sourceTree = "<group>"; };
 		C23F1392183BDCFB0076F13C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C23F1394183BDCFB0076F13C /* SLBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLBViewController.h; sourceTree = "<group>"; };
-		C23F1395183BDCFB0076F13C /* SLBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLBViewController.m; sourceTree = "<group>"; };
 		C23F1397183BDCFB0076F13C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C23F139D183BDCFB0076F13C /* PennStateWaitEstimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PennStateWaitEstimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23F139E183BDCFB0076F13C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -493,6 +495,12 @@
 		C23F1574185959580076F13C /* SLBUserInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLBUserInputViewController.m; sourceTree = "<group>"; };
 		C23F1576185973750076F13C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		C23F1577185973750076F13C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		C23F157C185A5BB60076F13C /* SLBPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBPreferencesViewController.h; sourceTree = "<group>"; };
+		C23F157D185A5BB60076F13C /* SLBPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLBPreferencesViewController.m; sourceTree = "<group>"; };
+		C23F158B185A7DD80076F13C /* GreenDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenDot.png; sourceTree = "<group>"; };
+		C23F158C185A7DD80076F13C /* RedDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedDot.png; sourceTree = "<group>"; };
+		C23F158D185A7DD80076F13C /* YellowDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YellowDot.png; sourceTree = "<group>"; };
+		C23F1591185A89B20076F13C /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -588,6 +596,10 @@
 		C23F1386183BDCFA0076F13C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C23F1591185A89B20076F13C /* arrow.png */,
+				C23F158B185A7DD80076F13C /* GreenDot.png */,
+				C23F158C185A7DD80076F13C /* RedDot.png */,
+				C23F158D185A7DD80076F13C /* YellowDot.png */,
 				C23F13B6183C01A40076F13C /* glyphish-icons */,
 				C23F1387183BDCFA0076F13C /* PennStateWaitEstimator-Info.plist */,
 				C23F1388183BDCFA0076F13C /* InfoPlist.strings */,
@@ -853,14 +865,14 @@
 		C23F155418500D4E0076F13C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C23F1394183BDCFB0076F13C /* SLBViewController.h */,
-				C23F1395183BDCFB0076F13C /* SLBViewController.m */,
 				C23F155518500EDC0076F13C /* SLBMapViewController.h */,
 				C23F155618500EDC0076F13C /* SLBMapViewController.m */,
 				C23F156A1853FCAF0076F13C /* SLBTableViewController.h */,
 				C23F156B1853FCAF0076F13C /* SLBTableViewController.m */,
 				C23F1573185959580076F13C /* SLBUserInputViewController.h */,
 				C23F1574185959580076F13C /* SLBUserInputViewController.m */,
+				C23F157C185A5BB60076F13C /* SLBPreferencesViewController.h */,
+				C23F157D185A5BB60076F13C /* SLBPreferencesViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -979,6 +991,7 @@
 				C23F153B183C01A50076F13C /* 81-dashboard.png in Resources */,
 				C23F1499183C01A50076F13C /* 109-chicken.png in Resources */,
 				C23F138A183BDCFA0076F13C /* InfoPlist.strings in Resources */,
+				C23F158E185A7DD80076F13C /* GreenDot.png in Resources */,
 				C23F14C6183C01A50076F13C /* 15-tags.png in Resources */,
 				C23F14F3183C01A50076F13C /* 190-bank.png in Resources */,
 				C23F14A1183C01A50076F13C /* 116-controller.png in Resources */,
@@ -1043,6 +1056,7 @@
 				C23F14CF183C01A50076F13C /* 158-wrench-2.png in Resources */,
 				C23F153A183C01A50076F13C /* 80-shopping-cart.png in Resources */,
 				C23F14DB183C01A50076F13C /* 169-8ball.png in Resources */,
+				C23F1592185A89B20076F13C /* arrow.png in Resources */,
 				C23F149D183C01A50076F13C /* 112-group.png in Resources */,
 				C23F1498183C01A50076F13C /* 108-badge.png in Resources */,
 				C23F1538183C01A50076F13C /* 78-stopwatch.png in Resources */,
@@ -1115,6 +1129,7 @@
 				C23F14F7183C01A50076F13C /* 194-note-2.png in Resources */,
 				C23F14C7183C01A50076F13C /* 150-sailboat.png in Resources */,
 				C23F14E0183C01A50076F13C /* 173-eyedropper.png in Resources */,
+				C23F158F185A7DD80076F13C /* RedDot.png in Resources */,
 				C23F1519183C01A50076F13C /* 47-fuel.png in Resources */,
 				C23F14A6183C01A50076F13C /* 120-headphones.png in Resources */,
 				C23F14A2183C01A50076F13C /* 117-todo.png in Resources */,
@@ -1126,6 +1141,7 @@
 				C23F1509183C01A50076F13C /* 31-ipod.png in Resources */,
 				C23F152D183C01A50076F13C /* 67-tshirt.png in Resources */,
 				C23F14E5183C01A50076F13C /* 178-city.png in Resources */,
+				C23F1590185A7DD80076F13C /* YellowDot.png in Resources */,
 				C23F14F2183C01A50076F13C /* 19-gear.png in Resources */,
 				C23F1528183C01A50076F13C /* 62-contrast.png in Resources */,
 				C23F152B183C01A50076F13C /* 65-note.png in Resources */,
@@ -1167,8 +1183,8 @@
 			files = (
 				C23F1575185959580076F13C /* SLBUserInputViewController.m in Sources */,
 				C23F1390183BDCFB0076F13C /* SLBAppDelegate.m in Sources */,
-				C23F1396183BDCFB0076F13C /* SLBViewController.m in Sources */,
 				C23F138C183BDCFA0076F13C /* main.m in Sources */,
+				C23F157E185A5BB60076F13C /* SLBPreferencesViewController.m in Sources */,
 				C23F155718500EDC0076F13C /* SLBMapViewController.m in Sources */,
 				C23F1578185973750076F13C /* Constants.m in Sources */,
 				C23F156C1853FCAF0076F13C /* SLBTableViewController.m in Sources */,

@@ -20,18 +20,28 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PennStateWaitEstimator/SLBUserInputViewController.m"
-            timestampString = "408514726.961969"
+            filePath = "PennStateWaitEstimator/SLBTableViewController.m"
+            timestampString = "408580741.406056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "-submitUserInput:"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "-tableView:cellForRowAtIndexPath:object:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,58 +51,42 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PennStateWaitEstimator/SLBUserInputViewController.m"
-            timestampString = "408514726.961969"
+            filePath = "PennStateWaitEstimator/SLBTableViewController.m"
+            timestampString = "408578020.891689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "-submitUserInput:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PennStateWaitEstimator/SLBUserInputViewController.m"
-            timestampString = "408514777.722205"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "-submitUserInput:"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "-objectsDidLoad:"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[SLBUserInputViewController submitUserInput:]"
+                  symbolName = "-[SLBTableViewController objectsDidLoad:]"
                   moduleName = "PennStateWaitEstimator"
-                  urlString = "file://localhost/Users/483w/Desktop/PennStateWaitEstimator/PennStateWaitEstimator/SLBUserInputViewController.m"
-                  timestampString = "408514886.632681"
+                  urlString = "file://localhost/Users/483w/Desktop/PennStateWaitEstimator/PennStateWaitEstimator/SLBTableViewController.m"
+                  timestampString = "408520412.704229"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "1459">
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "245">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[SLBUserInputViewController submitUserInput:]"
+                  symbolName = "-[SLBTableViewController objectsDidLoad:]"
                   moduleName = "PennStateWaitEstimator"
-                  urlString = "file://localhost/Users/483w/Desktop/PennStateWaitEstimator/PennStateWaitEstimator/SLBUserInputViewController.m"
-                  timestampString = "408514886.632895"
+                  urlString = "file://localhost/Users/483w/Desktop/PennStateWaitEstimator/PennStateWaitEstimator/SLBTableViewController.m"
+                  timestampString = "408520412.704603"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "1952">
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "2431">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -103,13 +97,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PennStateWaitEstimator/SLBUserInputViewController.m"
-            timestampString = "408514895.446155"
+            filePath = "PennStateWaitEstimator/SLBTableViewController.m"
+            timestampString = "408578020.891689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "-submitUserInput:"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "-objectsDidLoad:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -120,12 +114,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PennStateWaitEstimator/SLBUserInputViewController.m"
-            timestampString = "408514965.363153"
+            timestampString = "408572849.519865"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "-submitUserInput:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PennStateWaitEstimator/SLBTableViewController.m"
+            timestampString = "408580827.06393"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "-queryForTable"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

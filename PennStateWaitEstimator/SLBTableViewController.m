@@ -8,6 +8,7 @@
 
 #import "SLBTableViewController.h"
 #import "SLBUserInputViewController.h"
+#import "Constants.h"
 
 @interface SLBTableViewController ()
 
@@ -42,6 +43,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self loadObjects];
+    
+    NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    NSDictionary *initialUserDefaults = @{kOrderByName:@YES,
+                                          kOrderByWaitTime:@NO,
+                                          kFilterRestaurants:@YES,
+                                          kFilterBars:@YES,
+                                          kFilterOther:@YES};
+    [preferences registerDefaults:initialUserDefaults];
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,6 +73,37 @@
     [super objectsDidLoad:error];
     
     // This method is called every time objects are loaded from Parse via the PFQuery
+    
+    //everytime the data is updated recalculate the wait time
+    NSDate *currentDate = [NSDate date];
+    NSDate *currentDateAnHourEarlier = [currentDate dateByAddingTimeInterval:-kNumberOfSecondsInMinute*kNumberOfMinutesInHour];
+    
+    for (PFObject *object in self.objects) {
+        NSMutableArray *newTimes = [[NSMutableArray alloc] init];
+        
+        for(NSDictionary *dict in object[kTimesAlreadySubmitted])
+        {
+            if ([currentDateAnHourEarlier compare:((NSDate *)[dict objectForKey:kSubmittedTime])] ==NSOrderedAscending) {
+                [newTimes addObject:dict];
+            }
+        }
+        
+        // estimate wait time
+        NSInteger sum = 0;
+        for (NSDictionary *dict in newTimes) {
+            sum += [[dict objectForKey:kTimeWaited] integerValue];
+        }
+        NSNumber *newWaitTime = [NSNumber numberWithInteger:0];
+        if([newTimes count] != 0)
+        {
+            newWaitTime = [NSNumber numberWithInteger:sum/[newTimes count]];
+        }
+        
+        object[kTimesAlreadySubmitted] = newTimes;
+        object[kWaitTime] = newWaitTime;
+        
+        [object save];
+    }
 }
 
 - (void)objectsWillLoad {
@@ -75,17 +116,35 @@
 // Override to customize what kind of query to perform on the class. The default is to query for
 // all objects ordered by createdAt descending.
 - (PFQuery *)queryForTable {
-    PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
-    
-    // If no objects are loaded in memory, we look to the cache first to fill the table
-    // and then subsequently do a query against the network.
-    if ([self.objects count] == 0) {
-        query.cachePolicy = kPFCachePolicyCacheThenNetwork;
+    //create predicate based on user preferences
+    NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    NSString *filterString = @"";
+    if ([[preferences objectForKey:kFilterRestaurants] boolValue]) {
+        filterString = @"(isRestaurant = true)";
+        if ([[preferences objectForKey:kFilterBars] boolValue]) {
+            filterString = [NSString stringWithFormat:@"%@ OR (isBar = true)",filterString];
+        }
+        if ([[preferences objectForKey:kFilterOther] boolValue]) {
+            filterString = [NSString stringWithFormat:@"%@ OR (isRestaurant = false AND isBar = false)",filterString];
+        }
+    } else if ([[preferences objectForKey:kFilterBars] boolValue]) {
+        filterString = @"(isBar = true)";
+        if ([[preferences objectForKey:kFilterOther] boolValue]) {
+            filterString = [NSString stringWithFormat:@"%@ OR (isRestaurant = false AND isBar = false)",filterString];
+        }
+    } else {
+        filterString = @"(isRestaurant = false AND isBar = false)";
     }
     
-    //create predicate based on user preferences
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:filterString];
     
-    [query orderByAscending:@"name"];
+    PFQuery *query = [PFQuery queryWithClassName:self.parseClassName predicate:predicate];
+    
+    if ([[preferences objectForKey:kOrderByName] boolValue]) {
+        [query orderByAscending:kNameOfEstablishment];
+    } else {
+        [query orderByAscending:kWaitTime];
+    }
     
     return query;
 }
@@ -96,15 +155,20 @@
 // a UITableViewCellStyleDefault style cell with the label being the first key in the object.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
     static NSString *CellIdentifier = @"Cell";
+    if ([object[kWaitTime] integerValue] > kLongWait) {
+        CellIdentifier = @"RedCell";
+    } else if ([object[kWaitTime] integerValue] > kMediumWait) {
+        CellIdentifier = @"YellowCell";
+    } else {
+        CellIdentifier = @"GreenCell";
+    }
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-//    }
     
     // Configure the cell
-    cell.textLabel.text = [object objectForKey:@"name"];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ minutes", object[@"waitTime"]];
+    cell.textLabel.text = [object objectForKey:kNameOfEstablishment];
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ minutes", object[kWaitTime]];
     
     return cell;
 }
@@ -188,9 +252,13 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    SLBUserInputViewController *userInputViewController = segue.destinationViewController;
-    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
-    userInputViewController.selectedEstablishment = [self objectAtIndexPath:indexPath];
+    if ([segue.identifier isEqualToString:@"TableToUserInputSegue" ]) {
+        SLBUserInputViewController *userInputViewController = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        userInputViewController.selectedEstablishment = [self objectAtIndexPath:indexPath];
+    } else if ([segue.identifier isEqualToString:@"PreferencesSegue"]) {
+        
+    }
 }
 
 
